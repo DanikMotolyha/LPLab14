@@ -42,7 +42,14 @@ int wmain(int agrc, wchar_t* agrv[])
 	}
 	catch (Error::ERROR e)
 	{
-		Log::WriteError(log, e);
+		if (e.id != 100)
+			Log::WriteError(log, e);
+		else
+		{
+			cout << "Îøèáêà " << e.id << "  " << e.message << endl
+				<< "---------------------------------------------------\n";
+			system("pause");
+		}
 	}
 	cout << "End of program, press F" << endl;// system("pause");
 }

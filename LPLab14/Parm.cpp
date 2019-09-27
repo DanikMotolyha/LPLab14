@@ -13,6 +13,7 @@ namespace Parm
 		bool in = 0, out = 0, log = 0;
 		wchar_t ini[PARM_MAX_SIZE] = L"";
 		PARM e;
+		if (argc == 1) throw ERROR_THROW(100);
 		for (int i = 1; i < argc; ++i)
 		{
 			*agrv = agrv[i];
