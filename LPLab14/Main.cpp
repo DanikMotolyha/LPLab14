@@ -7,8 +7,6 @@
 #include "LT.h"
 #include "IT.h"
 
-//		 declare  integer string z;
-//		
 
 using namespace std;
 int wmain(int agrc, wchar_t* agrv[])
